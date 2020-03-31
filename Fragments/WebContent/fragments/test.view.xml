@@ -1,0 +1,73 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="fragments.test" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Fragments">
+	
+		<IconTabBar
+		expanded="true"
+		id="idIconTabBar"
+		select="handleIconTabBarSelect"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter
+				icon="sap-icon://table-view"
+				iconColor="Positive"
+				design="Vertical"
+				count="{/ProductCollectionStats/Counts/Weight/Ok} of {/ProductCollectionStats/Counts/Total}"
+				text="Data Values"
+				key="Ok" />
+			<IconTabSeparator icon="sap-icon://open-command-field" />
+			<IconTabFilter
+				icon="sap-icon://action-settings"
+				iconColor="Critical"
+				design="Vertical"
+				count="{/ProductCollectionStats/Counts/Weight/Heavy} of {/ProductCollectionStats/Counts/Total}"
+				text="Modify Data"
+				key="Heavy" />
+			<IconTabSeparator icon="sap-icon://open-command-field" />
+			<IconTabFilter
+				icon="sap-icon://account"
+				iconColor="Negative"
+				design="Vertical"
+				count="{/ProductCollectionStats/Counts/Weight/Overweight} of {/ProductCollectionStats/Counts/Total}"
+				text="Claim Overweights"
+				key="Overweight" />
+		</items>
+	</IconTabBar>	
+	
+		<content>
+			<Table items="{/students}" mode="SingleSelectMaster" select="handleItemPress">
+				<columns>
+					<Column>
+						<Text text="Name"/>
+					</Column>
+					<Column>
+						<Text text="Gender"/>
+					</Column>
+					<Column>
+						<Text text="Date Of Birth"/>
+					</Column>
+					<Column hAlign="Center">
+						<Text text="Father Name"/>
+					</Column>
+					<Column hAlign="Right">
+						<Text text="Contact Number"/>
+					</Column>									
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<ObjectIdentifier title="{firstName}"/>
+							<Text text="{gender}"/>
+							<Text text="{dateOfBirth}"/>
+							<Text text="{fatherName}"/>
+							<Text text="{contactNumber}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		
+		
+		
+	</Page>
+</mvc:View>

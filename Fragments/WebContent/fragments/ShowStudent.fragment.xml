@@ -1,0 +1,62 @@
+<core:FragmentDefinition  xmlns="sap.m"
+   xmlns:core="sap.ui.core" xmlns:c="sap.ui.core" xmlns:l="sap.ui.lauout" xmlns:ui="sap.ui"
+    xmlns:f="sap.ui.layout.form" 
+   xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomDta/1" >
+   <Dialog resizable="true" showHeader="false">
+  
+   <content>
+   		<HBox JustifyContent="End">
+   		<core:Icon src="sap-icon://decline"  press="handleShowStudentDialogClass"></core:Icon>
+   		</HBox>
+   		
+   			<HBox JustifyContent="Center" width="100%" class="sapiTinyMargin">
+   				<HBox JustifyContent="Start" width="50%">
+   					<Label text="FirstName:"/>
+   				</HBox>
+   				<HBox JustifyContent="Start" width="50%">
+   					<Text text="{/firstName}" width="100%"/>
+   				</HBox>
+   			</HBox>
+   			
+   			
+	<HBox JustifyContent="Center" width="100%" class="sapiTinyMargin">
+   			<HBox JustifyContent="Start" width="50%">
+   					<Label text="Gender:"></Label>
+   				</HBox>
+   				<HBox JustifyContent="Start" width="50%">
+   					<Text text="{/gender}" width="100%"/>
+   				</HBox>
+   				</HBox>
+   				   				
+   			<HBox JustifyContent="Center" width="100%" class="sapiTinyMargin">
+   				<HBox JustifyContent="Start" width="50%">
+   					<Label text="Date Of Birth:"></Label>
+   				</HBox>
+   				<HBox JustifyContent="Start" width="50%">
+   					<Text text="{/dateOfBirth}" width="100%"/>
+   				</HBox>
+   				</HBox>
+   				
+   				<HBox JustifyContent="Center" width="100%" class="sapiTinyMargin">
+   				<HBox JustifyContent="Start" width="50%">
+   					<Label text="FatherName:"></Label>
+   				</HBox>
+   				<HBox JustifyContent="Start" width="50%">
+   					<Text text="{/fatherName}" width="100%"/>
+   				</HBox>
+   				</HBox>
+   				
+   				<HBox JustifyContent="Center" width="100%" class="sapiTinyMargin">
+   				<HBox JustifyContent="Start" width="50%">
+   					<Label text="Contact Number:"></Label>
+   				</HBox>
+   				<HBox JustifyContent="Start" width="50%">
+   					<Text text="{/contactNumber}" width="100%"/>
+   				</HBox>
+   				</HBox>
+   	
+   </content>
+   <Button  text="Edit" type="Reject" press="editPress" width="10em"></Button>
+   <Button  text="Submit" press="onPress" type="Ghost" width="10em"></Button>
+   </Dialog>
+   </core:FragmentDefinition>
