@@ -10,8 +10,7 @@
 			<ToolbarSpacer/>
 				<Button text="Welcome Admin" type="transparent" />					
 							
-		</tnt:ToolHeader>
-	
+		</tnt:ToolHeader>	
 	<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
 	<items>
 	
