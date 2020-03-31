@@ -14,6 +14,7 @@
 	
 	<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
 	<items>
+	
 	<Label text="Enter UserName and Password"/>
 	<Input placeholder="Admin"/>
 	<Input placeholder="password" type="Password"/>
