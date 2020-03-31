@@ -1,0 +1,39 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+		controllerName="login.L1" xmlns:html="http://www.w3.org/1999/xhtml" class="sapUiSizeCompact" >
+	<Page title="Xml View" enableScrolling="true" navButtonType="Back" showNavButton="true" titleLevel="H1">
+		<content>
+
+		<tnt:ToolHeader>		
+				<Button icon="sap-icon://menu2" tooltip="Menu" type="transparent"/>
+			<ToolbarSpacer/>
+				<Text text="LogIn Page" />
+			<ToolbarSpacer/>
+				<Button text="Welcome Admin" type="transparent" />					
+							
+		</tnt:ToolHeader>
+	
+	<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+	<items>
+	<Label text="Enter UserName and Password"/>
+	<Input placeholder="Admin"/>
+	<Input placeholder="password" type="Password"/>
+	<Button width="12rem" text="LogIn" type="Emphasized" enabled="true" tooltip="LogIn" press="onPress" />
+	<Link text="Forgot Password" href=" " enabled="true" wrapping="true" width="100%" validateUrl="true" tooltip="If forgot password click here"/>
+	 <Link text="Sign Up" href=" " tooltip="New User Click here" enabled="true" width="100%"/>
+	</items>
+	</VBox>
+		</content>
+		
+		<footer>
+			<Bar>
+				<contentLeft>
+						<Text text="Hi, User"/>
+				</contentLeft>
+				
+				<contentRight>
+						<Text text="Hi, User1"/>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>
